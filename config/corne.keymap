@@ -9,14 +9,20 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 
+// Multi-tap
+&mt {
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-   &kp TAB   &kp Q     &kp W    &kp F     &kp P    &kp B       &kp J   &kp L     &kp U        &kp Y     &kp SEMI   &kp BSPC
-   &kp ESC   &kp A  &kp R  &kp S  &kp T  &kp G          &kp M      &kp N   &kp E     &kp I   &kp O  &kp ENTER
-   &kp LSHFT &kp Z  &kp X  &kp C  &kp D   &kp V     &kp K  &kp H  &kp COMMA &kp DOT &kp FSLH &kp ESC
+   &kp TAB   &mt N1 Q     &mt N2 W    &mt N3 F     &mt N4 P    &mt N5 B       &mt N6 J   &mt N7 L     &mt N8 U        &mt N9 Y     &mt N0 SEMI   &kp BSPC
+   &kp ESC   &mt SHIFT A  &mt LALT R  &mt LCTRL S  &mt LCMD T  &kp G          &kp M      &mt RMCD N   &mt RCTRL E     &mt RALT I   &mt RSHIFT O  &kp ENTER
+   &kp LSHFT &mt GRAVE Z  &mt BSLH X  &mt COMMA C  &mt DOT D   &mt SLSH V     &mt SQT K  &mt MINUS H  &mt EQUAL COMMA &mt LBKT DOT &mt RBKT FSLH &kp ESC
                                       &none        &kp TAB     &kp SPACE      &kp SPACE  &kp BSPC     &none
             >;
         };
