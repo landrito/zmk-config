@@ -56,10 +56,10 @@
                 };
                 media {
                         bindings = <
-   &trans     &trans       &trans       &trans       &trans       &trans      &trans     &trans       &trans          &trans         &trans         &trans
-   &trans     &trans       &trans       &trans       &trans       &trans      &trans     &trans       &trans          &trans         &trans         &trans
-   &trans     &trans       &trans       &trans       &trans       &trans      &trans     &trans       &trans          &trans         &trans         &trans
-                           &trans       &trans       &trans                              &trans       &trans          &trans
+   &kp K_LOCK  &trans       &LC(LS(TAB))           &LG(TAB)             &LC(TAB)                &trans      &kp K_PP   &kp K_PREV   &kp K_VOL_DN    &kp K_VOL_UP   &kp K_NEXT     &kp K_MUTE
+   &trans      &trans       &LC(LS(LA(LG(LEFT))))  &LC(LS(LA(LG(UP))))  &LC(LS(LA(LG(RIGHT))))  &trans      &trans     &kp LEFT     &kp DOWN        &kp UP         &RIGHT         &trans
+   &trans      &trans       &trans                 &trans               &trans                  &trans      &trans     &trans       &trans          &trans         &trans         &trans
+                            &trans                 &trans               &trans                                        &kp RALT     &kp RCMD        &trans
                         >;
                 };
                 mouse {
