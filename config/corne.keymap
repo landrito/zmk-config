@@ -15,6 +15,16 @@
     tapping_term_ms = <200>;
 };
 
+&mmv {
+     time-to-max-speed-ms = <128>;
+     acceleration-exponent = <2>;
+};
+
+&mwh {
+     time-to-max-speed-ms = <128>;
+     acceleration-exponent = <1>;
+};
+
 / {
         behaviors {
             hm: homerow_mods {
@@ -65,10 +75,10 @@
                 };
                 mouse {
                         bindings = <
-   &trans     &trans       &mwh SCROLL_LEFT  &mmv MOVE_UP    &mwh SCROLL_RIGHT  &mwh SCROLL_UP    &trans     &trans       &trans          &trans         &trans         &trans
-   &trans     &trans       &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &mwh SCROLL_DOWN  &trans     &mkp LCLK    &mkp MCLK       &mkp RCLK      &trans         &trans
-   &trans     &trans       &trans            &trans          &trans             &trans            &trans     &trans       &trans          &trans         &trans         &trans
-                           &trans            &trans          &trans                                          &trans       &trans          &trans
+   &trans     &trans       &mwh SCROLL_LEFT  &mmv MOVE_UP    &mwh SCROLL_RIGHT  &mwh SCROLL_UP    &mwh SCROLL_UP    &mwh SCROLL_LEFT  &trans     &mwh SCROLL_RIGHT  &trans  &trans
+   &trans     &trans       &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &mwh SCROLL_DOWN  &mwh SCROLL_DOWN  &mkp LCLK         &mkp MCLK  &mkp RCLK          &trans  &trans
+   &trans     &trans       &trans            &trans          &trans             &trans            &trans            &trans            &trans     &trans             &trans  &trans
+                           &trans            &trans          &trans                                                 &trans            &trans     &trans
                         >;
                 };
         };
