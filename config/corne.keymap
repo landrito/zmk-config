@@ -16,36 +16,15 @@
 };
 
 / {
-        behaviors {
-          hm: homerow_mods {
-              compatible = "zmk,behavior-hold-tap";
-              label = "HOMEROW_MODS";
-              #binding-cells = <2>;
-              tapping-term-ms = <200>;
-              quick_tap_ms = <0>;
-              flavor = "tap-preferred";
-              bindings = <&kp>, <&kp>; };
-          td: tapdance {
-                compatible = "zmk,behavior-hold-tap";
-                label = "TAPDANCE";
-                #binding-cells = <2>;
-                tapping-term-ms = <150>;
-                quick_tap_ms = <0>;
-                flavor = "tap-preferred";
-                bindings = <&kp>, <&kp>;
-            };
-        };
-
-        keymap {
-                compatible = "zmk,keymap";
-
-                default_layer {
-                        bindings = <
-   &kp TAB   &td N1 Q     &td N2 W    &td N3 F     &td N4 P    &td N5 B       &td N6 J   &td N7 L     &td N8 U        &td N9 Y     &td N0 SEMI   &kp BSPC
-   &kp ESC   &hm SHIFT A  &hm LALT R  &hm LCTRL S  &hm LCMD T  &kp G          &kp M      &hm RMCD N   &hm RCTRL E     &hm RALT I   &hm RSHIFT O  &kp ENTER
-   &kp LSHFT &td GRAVE Z  &td BSLH X  &td COMMA C  &td DOT D   &td SLSH V     &td SQT K  &td MINUS H  &td EQUAL COMMA &td LBKT DOT &td RBKT FSLH &kp ESC
+    keymap {
+        compatible = "zmk,keymap";
+        default_layer {
+            bindings = <
+   &kp TAB   &mt N1 Q     &mt N2 W    &mt N3 F     &mt N4 P    &mt N5 B       &mt N6 J   &mt N7 L     &mt N8 U        &mt N9 Y     &mt N0 SEMI   &kp BSPC
+   &kp ESC   &mt SHIFT A  &mt LALT R  &mt LCTRL S  &mt LCMD T  &kp G          &kp M      &mt RMCD N   &mt RCTRL E     &mt RALT I   &mt RSHIFT O  &kp ENTER
+   &kp LSHFT &mt GRAVE Z  &mt BSLH X  &mt COMMA C  &mt DOT D   &mt SLSH V     &mt SQT K  &mt MINUS H  &mt EQUAL COMMA &mt LBKT DOT &mt RBKT FSLH &kp ESC
                                       &none        &kp TAB     &kp SPACE      &kp SPACE  &kp BSPC     &none
-                        >;
-                };
+            >;
         };
+    };
 };
