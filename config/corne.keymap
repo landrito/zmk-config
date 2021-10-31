@@ -32,7 +32,7 @@
                 tapping-term-ms = <150>;
                 quick_tap_ms = <0>;
                 flavor = "tap-preferred";
-                bindings = <&to>, <&kp>;
+                bindings = <&lt>, <&kp>;
             };
         };
         keymap {
