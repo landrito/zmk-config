@@ -19,24 +19,14 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  | BKSP |
-// |  ESC |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  | ENTER|
-// | SHFT |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB    &mt N1 Q  &mt N2 W  &mt N3 F  &mt N4 P  &mt N5 B    &mt N6 J  &mt N7 L  &mt N8 U   &mt N9 Y   &mt N0 SEMI  &kp BSPC
-   &kp ESC    &kp A     &kp R     &kp S     &kp T     &kp G       &kp M     &kp N     &kp E      &kp I      &kp O        &kp ENTER
-   &kp LSHFT  &kp Z     &kp X     &kp C     &kp D     &kp V       &kp K     &kp H     &kp COMMA  &kp DOT    &kp FSLH     &kp ESC
+   &kp TAB    &mt N1 Q     &mt N2 W  &mt N3 F    &mt N4 P   &mt N5 B      &mt N6 J   &mt N7 L     &mt N8 U         &mt N9 Y      &mt N0 SEMI    &kp BSPC
+   &kp ESC    &kp A        &kp R     &kp S       &kp T      &kp G         &kp M      &kp N        &kp E            &kp I         &kp O          &kp ENTER
+   &kp LSHFT  &mt GRAVE Z  &mt BSLH  &mt COMMA C &mt DOT D  &mt FSLH V    &mt SQT K  &mt MINUS H  &mt EQUAL COMMA  &mt LBKT DOT  &mt RBKT FSLH  &kp ESC
                  &rgb_ug RGB_TOG &kp SPACE &none   &kp BSPC &kp SPACE &none
                         >;
                 };
-                lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+                symbols_numbers {
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
@@ -44,13 +34,7 @@
                           	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
-
-                raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+                media {
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
