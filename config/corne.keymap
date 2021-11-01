@@ -16,13 +16,13 @@
 };
 
 &mmv {
-     time-to-max-speed-ms = <128>;
-     acceleration-exponent = <1>;
+     time-to-max-speed-ms = <256>;
+     acceleration-exponent = <2>;
 };
 
 &mwh {
      time-to-max-speed-ms = <128>;
-     acceleration-exponent = <1>;
+     acceleration-exponent = <2>;
 };
 
 / {
@@ -75,8 +75,8 @@
                 };
                 mouse {
                         bindings = <
-   &trans     &trans       &mwh SCROLL_HOR(-32)  &mmv MOVE_VERT(2048)   &mwh SCROLL_HOR(32)  &mwh SCROLL_VERT(-32) &mwh SCROLL_VERT(-32) &mwh SCROLL_HOR(-32)  &trans     &mwh SCROLL_HOR(32)  &trans  &trans
-   &trans     &trans       &mmv MOVE_HOR(-2048)  &mmv MOVE_VERT(-2048)  &mmv MOVE_HOR(2048)  &mwh SCROLL_VERT(32)  &mwh SCROLL_VERT(32)  &mkp LCLK             &mkp MCLK  &mkp RCLK            &trans  &trans
+   &trans     &trans       &mwh SCROLL_HOR(-32)  &mmv MOVE_VERT(-2048)  &mwh SCROLL_HOR(32)  &mwh SCROLL_VERT(-32) &mwh SCROLL_VERT(-32) &mwh SCROLL_HOR(-32)  &trans     &mwh SCROLL_HOR(32)  &trans  &trans
+   &trans     &trans       &mmv MOVE_HOR(-2048)  &mmv MOVE_VERT(2048)   &mmv MOVE_HOR(2048)  &mwh SCROLL_VERT(32)  &mwh SCROLL_VERT(32)  &mkp LCLK             &mkp MCLK  &mkp RCLK            &trans  &trans
    &trans     &trans       &trans                &trans                 &trans               &trans                &trans                &trans                &trans     &trans               &trans  &trans
                            &trans                &trans                 &trans                                                           &trans                &trans     &trans
                         >;
