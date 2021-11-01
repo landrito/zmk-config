@@ -21,7 +21,7 @@
 };
 
 &mwh {
-     time-to-max-speed-ms = <128>;
+     time-to-max-speed-ms = <48>;
      acceleration-exponent = <2>;
 };
 
@@ -69,7 +69,7 @@
                         bindings = <
    &kp K_LOCK  &trans       &kp LC(LS(TAB))           &kp LG(TAB)             &kp LC(TAB)                &trans      &kp C_PP   &kp C_PREV   &kp C_VOL_DN    &kp C_VOL_UP   &kp C_NEXT  &kp C_MUTE
    &trans      &trans       &kp LC(LS(LA(LG(LEFT))))  &kp LC(LS(LA(LG(UP))))  &kp LC(LS(LA(LG(RIGHT))))  &trans      &kp LEFT   &kp DOWN     &kp UP          &kp RIGHT      &trans      &trans
-   &trans      &trans       &trans                    &trans                  &trans                     &trans      &trans     &trans       &trans          &trans         &trans      &trans
+   &trans      &trans       &trans                    &trans                  &trans                     &trans      &trans     &kp PG_DN    &kp PG_UP       &trans         &trans      &trans
                             &trans                    &trans                  &trans                                            &kp RALT     &kp RCMD        &trans
                         >;
                 };
