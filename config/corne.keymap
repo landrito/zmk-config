@@ -52,10 +52,10 @@
 
                 default_layer {
                         bindings = <
-   &kp TAB    &mt N1 Q     &mt N2 W    &mt N3 F     &mt N4 P    &mt N5 B      &mt N6 J   &mt N7 L     &mt N8 U         &mt N9 Y      &mt N0 SEMI    &kp BSPC
-   &kp ESC    &hm LSHFT A  &hm LALT R  &hm LCTRL S  &hm LCMD T  &kp G         &kp M      &hm RCMD N   &hm RCTRL E      &hm RALT I    &hm RSHFT O    &kp ENTER
-   &kp TAB    &mt GRAVE Z  &mt BSLH X  &mt COMMA C  &mt DOT D   &mt FSLH V    &mt SQT K  &mt MINUS H  &mt EQUAL COMMA  &mt LBKT DOT  &mt RBKT FSLH  &kp LA(BSPC)
-                           &none       &mo 2        &kp SPACE                            &lt 3 SPACE  &mo 1            &none
+   &kp TAB    &mt N1 Q     &mt N2 W    &mt N3 F     &mt N4 P     &mt N5 B      &mt N6 J   &mt N7 L     &mt N8 U         &mt N9 Y      &mt N0 SEMI    &kp BSPC
+   &kp ESC    &hm LSHFT A  &hm LALT R  &hm LCTRL S  &hm LCMD T   &kp G         &kp M      &hm RCMD N   &hm RCTRL E      &hm RALT I    &hm RSHFT O    &kp ENTER
+   &kp TAB    &mt GRAVE Z  &mt BSLH X  &mt COMMA C  &mt DOT D    &mt FSLH V    &mt SQT K  &mt MINUS H  &mt EQUAL COMMA  &mt LBKT DOT  &mt RBKT FSLH  &kp LA(BSPC)
+                           &kp SPACE   &lt 2 SPACE  &lt 1 SPACE                           &lt 1 SPACE  &lt 3 SPACE      &kp SPACE
                         >;
                 };
                 symbols_numbers {
