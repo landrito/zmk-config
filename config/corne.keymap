@@ -60,7 +60,7 @@
                         bindings = <
    &kp TAB    &mt N1 Q     &mt N2 W    &mt N3 F         &mt N4 P         &mt N5 B      &mt N6 J   &mt N7 L         &mt N8 U         &mt N9 Y      &mt N0 SEMI    &kp BSPC
    &kp ESC    &hm LSHFT A  &hm LALT R  &hm LCTRL S      &hm LCMD T       &kp G         &kp M      &hm RCMD N       &hm RCTRL E      &hm RALT I    &hm RSHFT O    &kp ENTER
-   &kp TAB    &mt GRAVE Z  &mt BSLH X  &mt COMMA C      &mt DOT D        &mt FSLH V    &mt SQT K  &mt MINUS H      &mt EQUAL COMMA  &mt LBKT DOT  &mt RBKT FSLH  &kp LA(BSPC)
+   &kp TAB    &kp Z        &kp X       &kp C            &kp D            &kp V         &kp K      &kp H            &kp COMMA        &kp DOT       &kp FSLH       &kp LA(BSPC)
                            &kp SPACE   &lt MEDIA SPACE  &lt SYM_L SPACE                           &lt SYM_R SPACE  &lt MOUSE SPACE  &kp SPACE
                         >;
                 };
@@ -76,7 +76,7 @@
                         bindings = <
    &trans     &kp N1       &kp N2       &kp N3       &kp N4       &kp N5      &kp N6     &kp N7       &kp N8          &kp N9         &kp N0         &trans
    &trans     &kp LBKT     &kp RBKT     &kp LBRC     &kp RBRC     &kp DQT     &trans     &trans       &trans          &trans         &trans         &trans
-   &trans     &kp BSLH     &GRAVE       &kp EQUAL    &kp MINUS    &kp SQT     &trans     &trans       &trans          &trans         &trans         &trans
+   &trans     &kp BSLH     &kp GRAVE    &kp EQUAL    &kp MINUS    &kp SQT     &trans     &trans       &trans          &trans         &trans         &trans
                            &trans       &trans       &trans                              &trans       &trans          &trans
                         >;
                 };
