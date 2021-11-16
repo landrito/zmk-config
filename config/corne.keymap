@@ -24,12 +24,12 @@
 
 &mmv {
      time-to-max-speed-ms = <256>;
-     acceleration-exponent = <2>;
+     acceleration-exponent = <3>;
 };
 
 &mwh {
      time-to-max-speed-ms = <48>;
-     acceleration-exponent = <2>;
+     acceleration-exponent = <4>;
 };
 
 / {
@@ -92,8 +92,8 @@
                         bindings = <
    &trans     &trans       &mwh SCROLL_HOR(-16)  &mmv MOVE_VERT(-2048)  &mwh SCROLL_HOR(16)    &mwh SCROLL_VERT(-16) &mwh SCROLL_VERT(-16) &mwh SCROLL_HOR(-16)  &trans     &mwh SCROLL_HOR(16)  &trans  &trans
    &trans     &trans       &mmv MOVE_HOR(-2048)  &mmv MOVE_VERT(2048)   &mmv MOVE_HOR(2048)    &mwh SCROLL_VERT(16)  &mwh SCROLL_VERT(16)  &mkp LCLK             &mkp MCLK  &mkp RCLK            &trans  &trans
-   &trans     &trans       &trans                &trans                 &trans                 &trans                &trans                &trans                &trans     &trans               &trans  &trans
-                           &trans                &trans                 &mmv MOVE_VERT(-2048)                                            &trans                &trans     &trans
+   &trans     &trans       &trans                &trans                 &trans                 &trans                &trans                &kp PG_DN             &kp PG_UP  &trans               &trans  &trans
+                           &trans                &trans                 &mmv MOVE_VERT(-2048)                                              &trans                &trans     &trans
                         >;
                 };
         };
