@@ -66,7 +66,7 @@
                 };
                 lower {
                         bindings = <
-   &kp TILDE  &kp EXCL     &kp AT       &kp HASH     &kp DOLLAR   &kp PERCENT  &kp CARAT  &kp AMPS     &kp STAR        &kp LPAR       &kp RPAR       &trans
+   &kp TILDE  &kp EXCL     &kp AT       &kp HASH     &kp DOLLAR   &kp PERCENT  &kp CARET  &kp AMPS     &kp STAR        &kp LPAR       &kp RPAR       &trans
    &trans     &trans       &trans       &trans       &trans       &trans       &kp DQT    &kp UNDER    &kp PLUS        &kp LBRC       &kp RBRC       &kp PIPE
    &trans     &trans       &trans       &trans       &trans       &trans       &kp LEFT   &kp DOWN     &kp UP          &kp RIGHT      &trans         &trans
                            &trans       &trans       &trans                               &trans       &trans          &trans
